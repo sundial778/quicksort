@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Bubble Sort </title>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  
+    <style type="text/css">
+    
+/*body
+{ font-size: 30px;
+text-align:center;
+ color:black; 
+ background-image:url('http://www.pptbackground.net/background/Bubbles-Yellow-Abstraction-PPT-for-Powerpoint-Templates.jpg');
+
+
+}
+ #mainSection {
+    opacity:1; 
+    background-image:url('https://67.media.tumblr.com/15d55047bf5432539361a2c8ee6cb7f1/tumblr_n8wauigY8j1txe8e9o1_500.gif'); 
+    background-repeat:no-repeat; 
+    background-position:center; 
+    background-size:cover; 
+    width: 50%; 
+    height: 50%; 
+    margin:auto;"}
+   p{
+        color:white;
+        font-size:50px;
+        display:inline-block;
+        word-wrap:break-word;   
+    }
+    */
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Header -->
+        
+    </header>
+
+    <section id = "mainSection">
+        <form>
+        <p>Choose your sort</p>
+        <input id ="qSort" type ="radio" > Quick sort</input>
+        <input id ="bSort" type ="radio">  Bubble Sort</input>
+            <table>
+                <tr>
+                    <td >
+                         <h1 id="mainHeader"> Bubble Sort </h1>
+                            <h3> Instructions</h3>
+                        <ul style ="list-style-type:none;">
+       
+                            <li>
+                                Insert numbers seperated by commas (No space)
+                            </li>
+                            <li>
+                                Press "run" button
+                            </li>
+                            <li>
+                                If you're feeling lazy, press the second button to run using randomly generated numbers
+
+                            </li>
+
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3 id="randomNumbers"></h3>
+                        </input>
+                        <input type="text" id="arrayGenerator" 9">
+                        <button id="useOwn"> Use your own numbers</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="usePrewrittenNumbers"> Use randomly generated numbers numbers</button>
+                    </td>
+
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+            integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+            crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript" src="quicksort.js"></script>
+</body>
+
+</html>
