@@ -173,30 +173,69 @@ else if(useQuicSort)
 
 
     
-
-function quickSort(array) {
-        
-var array2 = []
-for(f = 0; f < array.length;  f++)
+function swap(array)
 {
-    
-      var  tempHighest = 0
-      if(array[f] > tempHighest)
-      {
+	console.log(array + " before the swap")
+	var temp = array[h]
+	
+	
+	swapped = false
 
-        tempHighest = array[f]
-
-      }
-      else{
-        array2.push(array[f])
-      }
-        console.log(tempHighest)
-    
+	if(array[k] < array[h])
+	{
+	array[h] = array[k]
+	array[k] = temp
+	swapped = true;
+	h++
+	k++
+	while(swapped === true)
+{
+	swap(array)
 }
-};
-var arra = [32,1,4]
+}
+else{
+	swapped = false;
+}
+}
 
-quickSort(arra)
+
+console.log(array)
+
+}
+}
+function quickSort(array,lessThan,moreThan) { 
+	
+	var lengthy = array.length
+	var pivot = array[0]
+	        for(var g = 0; g <lengthy; g++)
+        {
+        	
+        	
+        	if (array[g] > pivot)
+        	{
+        		moreThan.push(array[g])
+        		console.log(moreThan)
+        	}
+        	else{
+        		lessThan.push(array[g])
+        		console.log(lessThan)
+        		if (g == lengthy -1)
+        	{
+        		for(h = 0,k = 1; h,k < moreThan.length;)
+        		{
+        		swap(moreThan)     	
+        		
+        	}
+        	for(h=0, k =1; h,k <lessThan.length;){
+        		swap(lessThan)
+        	}
+
+        	}
+        }
+      
+}
+}
+quickSort(numbersToSort)
         printToPage("The sorted array is " + numbersToSort);
 
     }
